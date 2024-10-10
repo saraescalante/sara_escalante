@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bio</title>
+    <!-- Enlace al archivo CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="mediaqueries.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</head>
+<body>
+    <!-- Navegación de escritorio -->
+    <nav id="desktop-nav">
+        
+		<div class="logo">
+    <a href="index.html">SARA ESCALANTE</a>
+</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="index.html">Overview</a></li>
+                <li><a href="personal.html">Personal</a></li>
+                <li><a href="comercial.html">Comercial</a></li>
+                <li><a href="bio.html">Bio</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Navegación hamburguesa -->
+    <nav id="hamburger-nav">
+        <div class="logo"> SARA ESCALANTE </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onClick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html" onClick="toggleMenu()">Overview</a></li>
+                <li><a href="personal.html" onClick="toggleMenu()">Personal</a></li>
+                <li><a href="comercial.html" onClick="toggleMenu()">Comercial</a></li>
+                <li><a href="bio.html" onClick="toggleMenu()">Bio</a></li>
+                <li><a href="contacto.html" onClick="toggleMenu()">Contacto</a></li>
+            </div>
+        </div>
+    </nav>
+	
+	
+	
+	 <div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="container4">
+                <p class="bio-text">I am a design student and photographer specializing in detail and minimalist, industrial aesthetics. My objective is to produce visual works that are both captivating and impactful, employing minimalism to emphasize the essence of each project. I am looking to further my career as a digital designer in an environement where creativity technology, and innovation intersect to deliver outstanding results.</p>
+                <img src="imagen22grande.jpg" alt="ImagenBIO" class="bio-image">
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="container4">
+                <p class="bio-text">I am a design student and photographer specializing in detail and minimalist, industrial aesthetics. My objective is to produce visual works that are both captivating and impactful, employing minimalism to emphasize the essence of each project. I am looking to further my career as a digital designer in an environement where creativity technology, and innovation intersect to deliver outstanding results.</p>
+                <img src="imagen23grande.jpg" alt="ImagenBIO2" class="bio-image">
+            </div>
+        </div>
+        <!-- Añadir más slides según sea necesario -->
+    </div>
+    <!-- Botones de navegación -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div>
+
+	   <script src="script.js"></script>
+	 <footer>
+        <p>&copy; 2024 Sara Escalante. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+
