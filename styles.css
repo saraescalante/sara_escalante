@@ -293,8 +293,8 @@ img {
 
 .image-container {
     display: grid;
-    grid-template-columns: repeat(3, 100px);
-    grid-gap: 10px;
+    grid-template-columns: 100px, 100px, 100px;
+  gap: 20px 40px; 
     justify-content: center;
     margin-top: 20px;
 }
@@ -325,9 +325,8 @@ img {
 
 .image-grid2, .image-grid3 {
     display: grid;
-    grid-template-columns: repeat(3, 100px);
-    column-gap: 20px; /* Espacio horizontal entre columnas */
-    row-gap: 40px; /* Espacio vertical entre filas */
+    grid-template-columns: 100px, 100px, 100px;
+  gap: 20px 40px; 
     margin-top: 20px;
 }
 
