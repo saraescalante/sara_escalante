@@ -1,0 +1,498 @@
+/* Cargar la fuente personalizada */
+@font-face {
+    font-family: 'CooperHewitt';
+    src: url('fonts/CooperHewitt-Heavy.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'CooperHewitt', sans-serif; /* Aplicar la misma tipografía en toda la web */
+}
+
+body {
+    background-color: #fff;
+    font-family: 'CooperHewitt', sans-serif;
+    line-height: 1.6;
+}
+
+p {
+    background-color: #fff;
+    font-family: 'CooperHewitt', sans-serif;
+    line-height: 1.6;
+	
+}
+
+
+.logo {
+    font-family: 'CooperHewitt', sans-serif;
+	font-size:5em ;
+    font-weight: bold;
+    color: #000;
+	 letter-spacing: 0.03em;
+}
+
+.logo:hover  { 
+	cursor: default}
+
+.logo { 
+    width: 100%;
+    background-color: #fff;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.logo a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: #000; /* Color del texto */
+}
+
+.logo a:hover {
+    color: red; /* Cambia el color al pasar el mouse */
+}
+
+
+  footer {
+    display: flex;
+    justify-content: center;      /* Centra el contenido horizontalmente */
+    align-items: center;          /* Centra el contenido verticalmente */
+    background-color: lightgrey;  /* Fondo gris claro para el footer */
+    color: white;                 /* Texto en blanco */
+    padding: 20px;                /* Espacio interno del footer */
+    width: 100%;                  /* Asegura que el footer ocupe todo el ancho */
+    position: relative;           /* Posición relativa */
+    bottom: 0;                    /* Se posiciona en la parte inferior */
+    left: 0;                      /* Se alinea a la izquierda */
+    box-sizing: border-box;       /* Asegura que el padding no afecte el ancho total */
+}
+
+
+footer p {
+    margin: 0;                    /* Elimina el margen del texto del footer */
+    color: white;                 /* Asegura que el texto sea blanco */
+    background-color: transparent;/* Asegura que no haya fondo detrás del texto */
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+
+
+
+/* transiciones */
+
+a, .btn {
+  transition: all 300ms ease;
+}
+
+
+
+
+/* desktop nav */
+
+
+
+nav {
+   justify-content: space-around;
+	align-items:  center;
+	height: 26vh;
+	
+	
+}
+
+nav {
+    width: 100%;
+    margin-top:0px;
+}
+
+ul.nav-links li {
+    display: inline;
+}
+
+ul.nav-links li a:hover {
+    color: red;
+}
+
+ul.nav-links {
+    display: flex; 
+    justify-content: space-evenly; 
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+	margin-top: -10;
+}
+
+ul.nav-links li a {
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000;
+    letter-spacing: 0.03em;
+    transition: color 0.3s ease;
+}
+
+.logo  {
+    font-size:5em 
+}
+
+
+
+
+
+/*hamburger menu*/
+
+#hamburger-nav { 
+	display: none;
+	}
+
+.hamburger-menu { 
+	position: relative;
+	display: inline-block;
+	height:100px;
+	
+	}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px; /* Tamaño de altura del ícono */
+    width: 30px;  /* Tamaño de ancho del ícono */
+    cursor: pointer;
+    position: relative;
+    z-index: 1000; /* Traerlo al frente */
+    margin-right: 20px; /* Margen para separarlo del borde */
+}
+
+.hamburger-icon span {
+    display: block;
+    width: 100%;
+    height: 6px; /* Grosor de las barras */
+    background-color: black; /* Color de las barras */
+    margin: 2px 0; /* Espacio entre las barras */
+    transition: all 0.3s ease-in-out;
+}
+
+
+.menu-links {
+	position: absolute;
+	top: 100%;
+	right:  0%;
+	background-color: white;
+	width:100%;
+	max-height: 0;
+	overflow: hidden;
+	transition: all 0.3 ease-in-out;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000;
+    letter-spacing: 0.03em;
+	}
+
+.menu-links a {
+	display: block;
+	padding: 10px;
+	text-align:  justify;
+	font-size: 1.5rem;
+	color: black;
+	text-decoration: none;
+	transform: all 0.3 ease-in-out;
+	}
+
+.menu-links li {
+	list-style: none;
+	}
+
+.menu-links.open {
+	max-height: 400px;
+	width: auto;
+	 z-index: 1000;
+	}
+
+.hamburger-icon.open span:first-child {
+	transform: rotate(45deg) translate(10px, 5px )
+	}
+
+.hamburger-icon.open span:nth-child(2) {
+	opacity: 0;
+	}
+
+.hamburger-icon.open span:last-child {
+	transform:rotate(-45deg)translate(10px,-5px )
+	}
+
+
+.hamburger-icon span:first-child {
+	transform: none;
+	}
+
+.hamburger-icon span:first-child {
+	opacity: none;
+	}
+
+.hamburger-icon span:first-child {
+	transform: none;
+	}
+
+
+	
+
+		
+
+	
+	
+	
+
+
+/* Contenedor principal */
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+p { 
+
+    font-family: 'CooperHewitt', sans-serif;
+	font-size:1em ;
+    color: #000;
+	 letter-spacing: 0.03em;
+
+}
+
+.image-grid {
+    display: inline;
+    margin-top: 20px;
+}
+
+.image-item {
+    width: 100%;
+    max-width: 200px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 100%));
+    grid-gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.image-description, .image-desc {
+    font-family: 'CooperHewitt', sans-serif;
+    font-size: 1rem;
+    color: #000;
+    text-align: center;
+    margin-top: 6px;
+    line-height: 1;
+}
+
+
+
+
+
+
+
+/* Grilla de imágenes personal y comercial */
+.container2, .container3 {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.image-grid2, .image-grid3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,300px,300px));
+    column-gap: 20px; /* Espacio horizontal entre columnas */
+    row-gap: 40px; /* Espacio vertical entre filas */
+    margin-top: 20px;
+}
+
+.grid-item2, .grid-item3 {
+    width: 100%; /* Asegura que las imágenes ocupen el ancho del grid-item */
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Transiciones suaves */
+}
+
+img:hover {
+    transform: scale(0.9); 
+    filter: grayscale(100%);
+}
+
+.image-description {
+    margin-top: 6px;
+    font-size: 16px;
+}
+
+ .container4 {
+    display: flex; /* Disposición horizontal para el texto e imagen */
+    flex-direction: row; /* Asegura el contenido en fila */
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: space-between; /* Espacio entre texto e imagen */
+    width: 100%;
+    max-width: 1000px; /* Ancho máximo de la sección */
+    margin: 0 auto; /* Centra el contenedor */
+    padding: 50px 100px 20px 20px;
+    box-sizing: border-box;
+}
+
+.bio-text {
+    flex: 1; /* Permitir que el texto ocupe el espacio disponible */
+    font-family: 'CooperHewitt', sans-serif; /* Fuente personalizada */
+    font-size: 1rem; /* Tamaño de fuente */
+    color: #000; /* Color del texto */
+    line-height: 1.6;
+    padding: 20px; /* Espaciado interno en el texto */
+    margin-right: 20px; /* Espacio entre texto e imagen */
+    text-align: justify; /* Justificación del texto */
+    box-sizing: border-box;
+}
+
+.bio-image {
+    width: 400px; /* Tamaño de la imagen en pantallas grandes */
+    height: auto; /* Mantiene la proporción */
+    margin: 0; /* Sin margen adicional */
+}
+
+/* Contenedor del slider */
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilos para el slider en pantallas grandes */
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    flex-direction: row; /* Coloca el contenido en fila */
+}
+
+/* Botones de navegación del slider */
+.swiper-button-next, .swiper-button-prev {
+    color: #000; /* Color de los botones de navegación */
+    width: 20px; /* Tamaño de los botones */
+    height: 20px;
+}
+
+
+
+/* Diseño de página CONTACTO */
+/* Estilos generales para la página de contacto */
+body {
+    font-family: 'CooperHewitt', sans-serif; /* Usa la misma fuente que en otras páginas */
+    background-color: white;/* Fondo claro */
+    color: #333; /* Color de texto */
+    margin: 0;
+    padding: 0;
+}
+
+.container-contact {
+    max-width: 600px; /* Ancho máximo del contenedor */
+    margin: 50px auto; /* Centra el contenedor con margen superior */
+    padding: 20px; /* Espaciado interno */
+    background-color: #fff; /* Fondo blanco */
+}
+
+h1 {
+    text-align: center; /* Centra el título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.contact-form {
+    display: flex; /* Usar Flexbox para la disposición del formulario */
+    flex-direction: column; /* Disposición vertical */
+}
+
+label {
+    margin-bottom: 5px; /* Espacio debajo de las etiquetas */
+}
+
+input, 
+textarea {
+    margin-bottom: 15px; /* Espacio debajo de los campos */
+    padding: 10px; /* Espacio interno en los campos */
+    border: 1px solid #ccc; /* Borde de los campos */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño de fuente */
+}
+
+button {
+    padding: 10px; /* Espacio interno en el botón */
+    background-color: red;/* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    font-size: 1rem; /* Tamaño de fuente */
+}
+
+button:hover {
+    background-color: #0056b3; /* Color de fondo del botón al pasar el mouse */
+}
+
+
+
+
+
+
+
+
+
+/* Contenedor del iFrame en tamaño de escritorio */
+.iframe-advertisement {
+    width: 728px;
+    height: 90px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.iframe-ad {
+    width: 100%;
+    height: 100%;
+    border: none; /* Sin borde para que se vea limpio */
+}
+
+
+footer a {
+    text-decoration: none; /* Eliminar el subrayado */
+    color: white; /* Asegurar que el color coincida con el texto del footer */
+}
+
+footer a:hover {
+    color: lightgrey; /* Cambia el color al pasar el mouse si deseas un efecto */
+}
+
+
+
+
+

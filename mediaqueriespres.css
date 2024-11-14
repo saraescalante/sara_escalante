@@ -1,0 +1,92 @@
+/* Para pantallas pequeñas - móviles (hasta 600px de ancho) */
+@media screen and (max-width: 600px) {
+    /* Ajustes de la barra de navegación */
+    nav {
+        height: 8vh; /* Altura mínima para que el botón hamburguesa sea visible */
+        display: flex;
+        justify-content: flex-end; /* Alinea el menú hamburguesa a la derecha */
+        align-items: center;
+        background-color: white; /* Fondo blanco para visibilidad */
+    }
+
+    nav .logo, /* Oculta el logo */
+    nav ul.nav-links { /* Oculta los enlaces de navegación */
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex; /* Mostrar menú hamburguesa */
+        flex-direction: column;
+        cursor: pointer;
+        z-index: 1000;
+        padding-right: 10px; /* Espacio a la derecha */
+    }
+
+    .hamburger-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px; /* Tamaño ancho del ícono */
+        height: 24px; /* Tamaño altura del ícono */
+    }
+
+    .hamburger-icon span {
+        display: block;
+        width: 100%;
+        height: 4px; /* Grosor de las barras */
+        background-color: black; /* Color de las barras */
+        margin: 3px 0; /* Espacio entre las barras */
+        transition: all 0.3s ease-in-out;
+    }
+
+    .contenedor-diapositivas {
+        height: auto; /* Ajusta altura para scroll natural en pantallas pequeñas */
+        overflow-y: auto;
+    }
+
+    /* Botón de llamada a la acción */
+    .botonver {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+}
+
+   
+@media only screen and (max-width: 600px) {
+    .diapositiva-azul {
+        background-image: url('imagen11mediana.jpg'); /* Imagen de fondo móvil */
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+/* Ajustes de texto en diapositiva-azul para mejorar la legibilidad */
+.diapositiva-azul h1 {
+    font-size: 2.5em; /* Tamaño de fuente mayor para el título */
+    margin: 0.5em 0;
+}
+
+.diapositiva-azul p {
+    max-width: 90%; /* Limita el ancho del texto */
+    margin: 1em auto;
+    line-height: 1.6;
+    font-size: 1.2em;
+}
+
+@media screen and (min-width:600px) {
+	   .diapositiva-azul {
+       background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    }
+ }
+
+  .diapositiva-azul p {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+            font-size: 1.2em;
+        }

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	
+	<link rel="stylesheet" href="mediaqueriespres.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+    <title>Presentación Visual de Proyectos - Sara Escalante</title>
+    <style>
+		
+		
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            overflow: hidden; /* Evita el scroll vertical */
+            font-family: Arial, sans-serif;
+            height: 100vh; /* Ajusta la altura del contenedor */
+        }
+
+        /* Estilos del contenedor principal para el scroll horizontal */
+        .contenedor-diapositivas {
+            display: flex;
+            overflow-x: auto; /* Activa el scroll horizontal */
+            scroll-snap-type: x mandatory; /* Snap al deslizar */
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .contenedor-diapositivas::-webkit-scrollbar {
+            display: none; /* Oculta la barra de desplazamiento */
+        }
+		
+		
+		
+.botonver {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    background-color: transparent; /* Asegura que el fondo sea completamente transparente */
+    padding: 0;
+    transition: color 0.3s ease;
+    cursor: pointer; /* Cursor de enlace */
+    outline: none; /* Elimina el contorno en algunos navegadores */
+    box-shadow: none; /* Elimina cualquier sombra que pueda actuar como borde */
+}
+
+.botonver:hover {
+    color: red; /* Cambia el color al hacer hover */
+}
+
+
+
+
+
+        /* Reset básico */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+/* Transiciones */
+a, .btn {
+    transition: all 300ms ease;
+}
+
+/* Estilo de navegación de escritorio */
+nav {
+    width: 100%;
+    height: 10vh; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white; /* Ajusta el color de fondo */
+    z-index: 10;
+    position: fixed;
+    top: 0;
+}
+
+ul.nav-links {
+    display: flex; 
+    justify-content: space-evenly; 
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.nav-links li {
+    display: inline;
+}
+
+ul.nav-links li a {
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black; /* Color blanco para la página de presentación */
+    letter-spacing: 0.03em;
+    transition: color 0.3s ease;
+}
+
+ul.nav-links li a:hover {
+    color: red;
+}
+
+/* Logo */
+.logo {
+    font-size: 5em;
+}
+
+/* Estilo del menú hamburguesa */
+#hamburger-nav {
+    display: none;
+}
+
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+    height: 100px;
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1000;
+    margin-right: 20px;
+}
+
+.hamburger-icon span {
+    display: block;
+    width: 100%;
+    height: 6px;
+    background-color: white; /* Barras blancas para la presentación */
+    margin: 2px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+/* Muestra el menú en dispositivos móviles */
+.hamburger-menu.active #hamburger-nav {
+    display: block;
+    max-height: 200px; /* Ajusta la altura según el contenido */
+}
+
+
+   /* Estilos generales para cada diapositiva */
+.diapositiva, .diapositiva-azul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    width: 100vw;
+    height: 100vh;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    overflow: hidden;
+}
+
+/* Estilo específico para la diapositiva-azul en pantallas grandes */
+.diapositiva-azul {
+    background-image: url('imagen24grande.jpg'); /* Imagen de fondo grande */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Asegura que el texto en la diapositiva-azul esté centrado y bien posicionado */
+.diapositiva-azul h1, .diapositiva-azul p {
+    margin: 0.5em 0; /* Espacio entre los elementos de texto */
+    max-width: 90%; /* Limita el ancho del texto para mejorar la legibilidad */
+}
+
+/* Ajustes de tamaño de texto y estilo */
+.diapositiva-azul h1 {
+    font-size: 2.5em; /* Tamaño de fuente mayor para el título */
+}
+
+.diapositiva-azul p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 1em auto; /* Centrado horizontal en el contenedor */
+}
+
+
+        .fondositio {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .fila-color {
+            width: 100vw;
+            height: calc(100vh / 3); /* Divide la pantalla en tres filas iguales */
+            flex-shrink: 0;
+        }
+
+        .blanco { background-color: #ffffff; }
+        .rojo { background-color: #FF0004; }
+        .negro { background-color: #000000; }
+
+        .botonver {
+            padding: 15px 30px;
+            background-color: #f45000;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+        }
+
+        .botonver:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Menú de navegación -->
+<nav>
+    <ul class="nav-links">
+        <li><a href="#a1">Inicio</a></li>
+        <li><a href="#a2">Sobre el Proyecto</a></li>
+        <li><a href="#a3">Wireframes</a></li>
+        <li><a href="#a4">Paleta de Colores</a></li>
+        <li><a href="#a5">Ir al Sitio</a></li>
+    </ul>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" id="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div id="hamburger-nav" class="menu-links">
+            <a href="#a1">Inicio</a>
+            <a href="#a2">Sobre el Proyecto</a>
+            <a href="#a3">Wireframe</a>
+            <a href="#a4">Paleta de Colores</a>
+            <a href="#a5">Ir al Sitio</a>
+        </div>
+    </div>
+</nav>
+
+
+<!-- Contenedor de diapositivas para desplazamiento horizontal -->
+<div class="contenedor-diapositivas">
+    <!-- Diapositiva 1: Intro -->
+    <div id="a1" class="diapositiva">
+        <div class="header">SARA ESCALANTE</div>
+        <h1>PORTFOLIO DE FOTOGRAFÍA</h1>
+        <h2>PRODUCCIÓN DIGITAL I</h2>
+		<h2> UNIVERSIDAD DE PALERMO </h2>
+    </div>
+
+    <!-- Diapositiva 2: Sobre el Proyecto -->
+    <div id="a2" class="diapositiva-azul">
+        <h1>OBJETIVO</h1>
+        <p>La creación de la página web de Sara Escalante fue un proceso de diseño y desarrollo enfocado en capturar su identidad visual como fotógrafa. Durante el desarrollo, se priorizó una experiencia de usuario fluida y directa, con un diseño adaptable a distintos dispositivos para asegurar que su trabajo se vea impecable tanto en pantallas de escritorio como en móviles. Cada detalle fue pensado para que los visitantes puedan explorar su obra sin distracciones, manteniendo el foco en la esencia conceptual y estética de su fotografía.</p>
+    </div>
+
+    <!-- Diapositiva 3: Wireframes -->
+    <div id="a3" class="diapositiva" style="background-color: #f0f0f0;" >
+        
+        <div class="boceto" style="display: flex; justify-content: center; align-items: center; height: 80vh;" >
+            <img src="imagen25.jpg" alt="Wireframe del proyecto" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+      
+  
+        </div>
+    </div>
+
+    <!-- Diapositiva 4: Paleta de Colores -->
+    <div id="a4" class="diapositiva fondositio">
+        <div class="fila-color blanco"></div>
+        <div class="fila-color rojo"></div>
+        <div class="fila-color negro"></div>
+    </div>
+
+    <!-- Diapositiva 5: Ver Sitio Completo -->
+ 
+<div id="a5" class="diapositiva" style="background-color: #000000; color: #ffffff;">
+    <h1>Ver Sitio Completo</h1>
+    <a class="botonver" href="https://saraescalante.github.io/sara_escalante/index.html" target="_blank" style="color: #ffffff;">Ver Sitio</a>
+</div>
+
+</div>
+	
+<script>
+document.getElementById("hamburger-icon").addEventListener("click", function() {
+    var navLinks = document.querySelector(".nav-links");
+    navLinks.style.display = navLinks.style.display === "flex" ? "none" : "flex";
+});
+</script>
+	
+	 <script src="script.js"></script>
+
+</body>
+</html>

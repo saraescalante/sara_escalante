@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sara Escalante - Portfolio</title>
+    
+    <!-- Enlace al archivo CSS externo -->
+    <link rel="stylesheet" href="styles.css"> 
+	<link rel="stylesheet" href="mediaqueries.css">
+	
+    <!-- Enlace a la librería de Font Awesome para los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+	
+	
+<body>
+	
+<nav id="desktop-nav">
+		
+		
+		<div class="logo">
+    <a href="index.html">SARA ESCALANTE</a>
+</div>
+
+		<div>  
+			<ul class="nav-links">
+			<li><a href="index.html">Overview</a></li>
+                <li><a href="personal.html">Personal</a></li>
+                <li><a href="comercial.html">Comercial</a></li>
+                <li><a href="bio.html">Bio</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+			</ul>
+			</div>
+	</nav>
+	
+<nav id="hamburger-nav">
+    <div class="logo">
+        <a href="index.html">SARA ESCALANTE</a> <!-- Enlace para redirigir al "Overview" -->
+    </div>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onClick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="index.html" onClick="toggleMenu()">Overview</a></li>
+            <li><a href="personal.html" onClick="toggleMenu()">Personal</a></li>
+            <li><a href="comercial.html" onClick="toggleMenu()">Comercial</a></li>
+            <li><a href="bio.html" onClick="toggleMenu()">Bio</a></li>
+            <li><a href="contacto.html" onClick="toggleMenu()">Contacto</a></li>
+        </div>
+    </div>
+</nav>
+
+		 
+	
+	
+   
+    <!-- Contenedor principal del contenido -->
+   <div class="container">
+    <!-- Grilla de imágenes -->
+    <div class="image-grid">
+        <div class="grid-item">
+            <img 
+              src="imagen1grande.jpg" 
+              srcset="imagen1pequeña.jpg 400w, imagen1mediana.jpg 800w, imagen1grande.jpg 1200w" 
+              sizes="(max-width: 600px) 400px, (max-width: 1200px) 800px, 1200px" 
+              alt="Imagen 1">
+        </div>
+        <div class="grid-item">
+            <img 
+              src="imagen2grande.jpg" 
+              srcset="imagen2pequeña.jpg 400w, imagen2mediana.jpg 800w, imagen2grande.jpg 1200w" 
+              sizes="(max-width: 600px) 400px, (max-width: 1200px) 800px, 1200px" 
+              alt="Imagen 2">
+        </div>
+        <div class="grid-item">
+            <img 
+              src="imagen3grande.jpg" 
+              srcset="imagen3pequeña.jpg 400w, imagen3mediana.jpg 800w, imagen3grande.jpg 1200w" 
+              sizes="(max-width: 600px) 400px, (max-width: 1200px) 800px, 1200px" 
+              alt="Imagen 3">
+        </div>
+        <div class="grid-item">
+            <img 
+              src="imagen6grande.jpg" 
+              srcset="imagen6pequeña.jpg 400w, imagen6mediana.jpg 800w, imagen6grande.jpg 1200w" 
+              sizes="(max-width: 600px) 400px, (max-width: 1200px) 800px, 1200px" 
+              alt="Imagen 4">
+        </div>
+        <div class="grid-item">
+            <img 
+              src="imagen4grande.jpg" 
+              srcset="imagen4pequeña.jpg 400w, imagen4mediana.jpg 800w, imagen4grande.jpg 1200w" 
+              sizes="(max-width: 600px) 400px, (max-width: 1200px) 800px, 1200px" 
+              alt="Imagen 5">
+        </div>
+        <div class="grid-item">
+            <img 
+              src="imagen5grande.jpg" 
+              srcset="imagen5pequeña.jpg 400w, imagen5mediana.jpg 800w, imagen5grande.jpg 1200w" 
+              sizes="(max-width: 600px) 400px, (max-width: 1200px) 800px, 1200px" 
+              alt="Imagen 6">
+        </div>
+		<div class="grid-item">
+            <img 
+              src="imagen13grande.jpg" 
+              srcset="imagen13pequeña.jpg 400w, imagen13mediana.jpg 800w, imagen13grande.jpg 1200w" 
+              sizes="(max-width: 600px) 400px, (max-width: 1200px) 800px, 1200px" 
+              alt="Imagen 13">
+        </div>
+		<div class="grid-item">
+            <img 
+              src="imagen14grande.jpg" 
+              srcset="imagen14pequeña.jpg 400w, imagen14mediana.jpg 800w, imagen14grande.jpg 1200w" 
+              sizes="(max-width: 600px) 400px, (max-width: 1200px) 800px, 1200px" 
+              alt="Imagen 14">
+        </div>
+		<div class="grid-item">
+            <img 
+              src="imagen15grande.jpg" 
+              srcset="imagen15pequeña.jpg 400w, imagen15mediana.jpg 800w, imagen15grande.jpg 1200w" 
+              sizes="(max-width: 600px) 400px, (max-width: 1200px) 800px, 1200px" 
+              alt="Imagen 15">
+        </div>
+    </div>
+</div>
+
+   <script src="script.js"></script>
+	
+	    
+        <div>
+
+       <footer>
+    <p>&copy; 2024 <a href="presentacion.html">Sara Escalante</a>. Todos los derechos reservados.</p>
+</footer>
+
+    </div>
+
+</body>
+</html>
+
