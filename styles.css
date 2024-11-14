@@ -294,8 +294,11 @@ img {
 .image-container {
     display: grid;
     grid-template-columns: 33.3% 33.3% 33.3%;
-  gap: 20px 40px; 
-    justify-content: center;
+    gap: 20px 40px;
+    justify-items: center;
+    width: 100%; /* Ocupa el ancho completo del contenedor padre */
+    max-width: 1200px; /* Limita el ancho máximo si es necesario */
+    margin: 0 auto; /* Centra el contenedor si tiene un ancho máximo */
     margin-top: 20px;
 }
 
@@ -326,7 +329,11 @@ img {
 .image-grid2, .image-grid3 {
     display: grid;
     grid-template-columns: 33.3% 33.3% 33.3%;
-  gap: 20px 40px; 
+    gap: 20px 40px;
+    justify-items: center;
+    width: 100%; /* Ocupa el ancho completo del contenedor padre */
+    max-width: 1200px; /* Limita el ancho máximo si es necesario */
+    margin: 0 auto; /* Centra el contenedor si tiene un ancho máximo */
     margin-top: 20px;
 }
 
