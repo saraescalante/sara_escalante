@@ -239,7 +239,7 @@ img {
 
 .image-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 100%));
+    grid-template-columns: 33.3% 33.3% 33.3%;;
     grid-gap: 10px;
     justify-content: center;
     margin-top: 20px;
